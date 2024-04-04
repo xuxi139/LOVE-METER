@@ -81,7 +81,7 @@ function calc()
                     if(ar=="F")
                     {
                             //res="FRIENDS";
-							document.getElementById("display_flame").innerHTML = randomNumber+'FRIENDS 🫂';
+							document.getElementById("display_flame").innerHTML = randomNumber+'% FRIENDS 🫂';
 							document.getElementById("display_flame").style.color='blue';
                     }
                     else if(ar=="L")
