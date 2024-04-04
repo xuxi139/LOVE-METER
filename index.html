@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FRIENDSHIP TEST</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+    <link rel="icon" href="icon.jpg">
+
+   <style>
+     
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        font-family: 'Raleway',sans-serif;
+        background-image: url(bg.jpg);
+        color: white;
+        line-height: 1.8;
+      }
+      a{
+        text-decoration: none;
+      }
+      
+      #container {
+        margin: auto auto ;
+        max-width: 750px;
+        padding: 20px;
+      }
+
+      .form-wrap {
+        margin-top: 150px;
+        background-color: rgb(199, 115, 115);
+        padding: 15px 25px;
+        color: #333;
+        border-radius: 10px;
+      }
+
+      .form-wrap h1, .form-group p{
+       text-align: center;
+      }
+
+      .form-wrap .form-group  {
+       margin-top: 15px;
+      }
+
+      .form-wrap .form-group label {
+       display: block;
+       color: #333;
+      }
+
+      .form-wrap .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: #ddd  1px solid;
+        border-radius: 5px;
+      }
+
+      .form-wrap button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background: white;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .form-wrap button:hover {
+        background: rgb(180, 156, 156);
+      }
+      
+      .form-wrap.bottom-text{
+        font-size: 13px;
+        margin-top: 20px;
+      }
+
+      
+      footer {
+       text-align: center;
+      }
+
+      footer p {
+       color:#333;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>check how much do you love your friend!!!</h1>
+        <form  name=first>
+          <div class="form-group">
+            <label for="Name">Enter your Name</label>
+            <input val='' type="text" name="name" onkeyup=check(this) class='txt' id="Name" />
+          </div>
+          <div class="form-group">
+            <label for="frnd-name">Your Friend Name</label>
+            <input  val='' type="text" name="name1" onkeyup=check(this) class='txt' id="Frnd_name" />
+
+            <div name=n1 id=nam1>Click the button to know the relationship status:</div>
+						<div id='display_flame'></div>
+          </div>
+          
+          <div id="btn1">
+            <button  class="btn" name=calculate type="button" onclick=calc()>CLICK HERE <i class="fa fa-heart" aria-hidden="true"></i></button>
+          </div>  
+
+            <div id='result' class='clearfix'>
+              <div class='group' align='center'>
+                <div class='love_result'>
+                  <span name=n1 id=nam1></span>
+                  </div>
+              </div> 
+            </div>
+
+
+        </form>
+      </div>
+      <footer>
+        <p>LOVEMETER &copy; 2024, All Rights Reserved</a></p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
