@@ -82,7 +82,7 @@ function calc()
                     {
                             //res="FRIENDS";
 							document.getElementById("display_flame").innerHTML = randomNumber+'% FRIENDS 🫂';
-							document.getElementById("display_flame").style.color='blue';
+							document.getElementById("display_flame").style.color='#333';
                     }
                     else if(ar=="L")
                     {
